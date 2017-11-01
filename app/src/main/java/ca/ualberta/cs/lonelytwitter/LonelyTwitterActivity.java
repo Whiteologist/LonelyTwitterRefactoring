@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import ca.ualberta.cs.lonelytweet.NormalLonelyTweet;
+
 public class LonelyTwitterActivity extends Activity {
 
 	private EditText bodyText;
@@ -66,4 +68,11 @@ public class LonelyTwitterActivity extends Activity {
 		tweetsProvider.saveTweets(tweets);
 	}
 
+	public EditText getBodyText() {
+		return bodyText;
+	}
+
+	public void setBodyText(EditText bodyText) {
+		this.bodyText = bodyText;
+	}
 }
